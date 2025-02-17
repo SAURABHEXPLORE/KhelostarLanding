@@ -48,9 +48,9 @@ export default function InteractiveTimeline({ isReverse = false, data = Deposite
                                             <div
                                                 className={`cursor-pointer order-2 md:order-1 transition-all duration-300 ease-in-out ${index % 2 === 0 ? "md:text-left md:pr-8" : "md:pl-0"
                                                     } ${hoveredIndex === index ? "" : "bg-transparent"}`}>
-                                                <h3 className={`text-primary-text transition-all duration-300 ease-in-out uppercase font-semibold  ${hoveredIndex === index ? "text_primary_gradient" : ""}`}>
+                                                <h1 className={`text-primary-text transition-all duration-300 ease-in-out uppercase font-semibold  ${hoveredIndex === index ? "text_primary_gradient" : ""}`}>
                                                     {item.title}
-                                                </h3>
+                                                </h1>
                                                 <p className="text-[#B4B4B4] font-normal text-[14px]">{item.description}</p>
                                             </div>
                                         </div>

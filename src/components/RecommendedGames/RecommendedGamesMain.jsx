@@ -8,7 +8,7 @@ const Card = ({ title, description, playNow, image }) => (
                 <img src={image} alt={title} className="w-full h-[200px] object-cover" />
             </div>
             <div className='flex flex-col items-baseline justify-center flex-1'>
-                <h5 className="text-2xl font-bold tracking-tight text-primary-text text-center">{title}</h5>
+                <h1 className="text-2xl font-bold tracking-tight text-primary-text text-center">{title}</h1>
                 <p className="font-normal text-[#B4B4B4] text-base pt-[16px]">{description}</p>
                 {/* <a href='#' className='uppercase text-[18px] underline font-bold text-yellow-500 py-[30px]'>{playNow}</a> */}
                 <a

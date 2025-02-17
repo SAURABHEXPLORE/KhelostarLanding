@@ -6,7 +6,7 @@ const Card = ({ title, description, image }) => (
     <div className="w-full shadow-sm bg-[#151515]">
         <div className="flex flex-col justify-start gap-[6px] p-4 rounded-2xl">
             <img src={image} alt={title} className="w-6 h-6 object-cover" />
-            <h5 className="text-[18px] font-semibold tracking-tight text-primary-text pt-[6px]">{title}</h5>
+            <h1 className="text-[18px] font-semibold tracking-tight text-primary-text pt-[6px]">{title}</h1>
             <p className="font-normal text-[#B4B4B4] text-base">{description}</p>
         </div>
     </div>

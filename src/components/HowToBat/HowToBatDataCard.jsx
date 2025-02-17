@@ -10,7 +10,7 @@ const HowToBatDataCard = () => {
                 <p className="absolute text-primary-black bottom-0 right-0 py-[15px] px-[26px] font-semibold text-2xl">{stepNumber}</p>
             </div>
             <div>
-                <h5 className="mb-2 text-[20px] font-bold tracking-tight text-primary-text text-center">{title}</h5>
+                <h1 className="mb-2 text-[20px] font-bold tracking-tight text-primary-text text-center">{title}</h1>
                 <p className="font-normal text-[#B4B4B4] text-base pt-[18px]">{description}</p>
             </div>
         </div>
