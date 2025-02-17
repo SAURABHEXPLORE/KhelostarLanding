@@ -9,10 +9,6 @@ import BonusOfferMain from './components/BonusAndOffer/BonusOfferMain';
 import DepositeWithdrawMain from "./components/DepositeAndWithdraw/DepositeWithdrawMain";
 import { DepositeData, WithdrawalData, DepositeImgData, WithdrawalImgData } from './components/DepositeAndWithdraw/DepositeWithdrawData';
 
-
-
-
-
 function App() {
 
   return (
@@ -63,7 +59,7 @@ function App() {
             </div>
           </div>
           <div>
-            <img fetchpriority="high" src="/assets/images/fast_cash.webp" alt="fast_cash" loading='eager' />
+            <img fetchpriority="high" src="/assets/images/fast_cash.webp" alt="fast_cash" loading='lazy' />
           </div>
         </div>
 
