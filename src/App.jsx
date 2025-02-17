@@ -59,7 +59,7 @@ function App() {
             </div>
           </div>
           <div>
-            <img fetchpriority="high" src="/assets/images/fast_cash.webp" alt="fast_cash" loading='lazy' />
+            <img fetchpriority="high" src="/assets/images/fast_cash.webp" alt="fast_cash" loading='eager' />
           </div>
         </div>
 
