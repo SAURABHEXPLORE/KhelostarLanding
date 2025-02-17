@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+    /* ----------- Colors----------- */
+    --color-primary-text: #ffffff;
+    --color-primary-black: #000000;
+    /* ----------- Fonts-Family----------- */
+    --font-work-sans: "Work Sans", serif;
+
+    /* ----------- Fonts-Size----------- */
+
+}
+
+@layer utilities {
+
+    .gradient-border-gradient {
+        background: linear-gradient(to right, #E9D37B, #B48B36);
+        border-image-slice: 1;
+        border-radius: 50px;
+    }
+
+    .gradient-border-gradient_in {
+        border-image-slice: 1;
+        border-radius: 50px;
+    }
+
+    .text_primary_gradient {
+        background: linear-gradient(to right, #CDAD55, #EDD77F);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+.button_gradient {
+    background: linear-gradient(90deg, #E9D37B 0%, #B48B36 30.43%, #CDAD55 68.23%, #EDD77F 100%);
+    animation: AnimateBorder 4s ease infinite;
+    -webkit-animation: AnimateBorder 4s ease infinite;
+    -moz-animation: AnimateBorder 4s ease infinite;
+    transform: translate(-2px, -2px);
+    transition: filter 1s ease-in;
+}
+
+.gradient_yellow_col {
+    background: linear-gradient(to right, #E9D37B, #B48B36);
+}
+
+.gradient_placeholder_col {
+    background: linear-gradient(to right, #373737, #202020);
+}
+
+.gradient_text_col {
+    background: linear-gradient(to right, #CDAD55, #EDD77F);
+}
+
+.button-wrapper:hover .button_gradient {
+    filter: blur(10px);
+    transition: filter .4s ease-in;
+}
+
+.playNowCommonStyle {
+    background: linear-gradient(180deg, #e8d173 0%, #8d6719 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff0;
+}
+
+.playNowCommonStyle::hover {
+    background: linear-gradient(180deg, #e8d173 0%, #8d6719 100%);
+}
+
+
+@-webkit-keyframes AnimateBorder {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimateBorder {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimateBorder {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* ---------------------------------- Mirror transition effect---------------------------------------- */
+
+
+.btn_reflection::after {
+    background-color: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: 550ms cubic-bezier(.19, 1, .22, 1);
+    width: 50px;
+    z-index: 10;
+}
+
+.btn_reflection:hover::after {
+    left: 120%;
+    transition: 550ms cubic-bezier(.19, 1, .22, 1);
+}
+
+@keyframes reflect {
+    0% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}

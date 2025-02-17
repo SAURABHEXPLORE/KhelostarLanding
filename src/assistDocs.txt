@@ -1,0 +1,8 @@
+// ------------------- Snippet
+
+rfc - Create React Functional Component
+rfce - Create React Functional Component and export
+rfced - Create React Functional Component and export it by default
+rfcpt - Create React Functional Component with PropTypes
+
+https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-react-snippet     // This is the referance Url for checking snippets
