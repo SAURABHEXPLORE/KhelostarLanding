@@ -10,7 +10,6 @@ const Card = ({ title, description, playNow, image }) => (
             <div className='flex flex-col items-baseline justify-center flex-1'>
                 <h1 className="text-2xl font-bold tracking-tight text-primary-text text-center">{title}</h1>
                 <p className="font-normal text-[#B4B4B4] text-base pt-[16px]">{description}</p>
-                {/* <a href='#' className='uppercase text-[18px] underline font-bold text-yellow-500 py-[30px]'>{playNow}</a> */}
                 <a
                     href="#" onClick={(e) => e.preventDefault()}
                     className='uppercase text-[18px] font-bold decoration-0 inline-block bg-primary-playNowbtn pt-[30px] pb-0.5 relative group playNowCommonStyle'
