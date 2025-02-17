@@ -63,7 +63,7 @@ function App() {
             </div>
           </div>
           <div>
-            <img rel="preload" fetchpriority="high" as="image" type="image/svg" src="/assets/images/fast_cash.webp" alt="fast_cash" loading='lazy' />
+            <img fetchpriority="high" src="/assets/images/fast_cash.webp" alt="fast_cash" loading='eager' />
           </div>
         </div>
 
